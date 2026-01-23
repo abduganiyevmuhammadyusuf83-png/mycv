@@ -18,19 +18,45 @@
  }
 
  /* Chap tomon */ 
+
 .left {
+  position: relative;
   width: 320px;
   background: #fff;
   padding: 20px;
-  border-left: 2px solid #333;
-  border-right: 2px solid #333;
+ 
 }
 
-/* PHOTO */
 .photo-box {
-  border: 4px solid #f5a623;
-  padding: 6px;
-  margin-bottom: 15px;
+  position: relative;
+  padding: 8px;
+  margin-bottom: 20px;
+}
+
+
+.photo-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -3px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid orange;
+  border-left: 4px solid orange;
+  border-right: 4px solid orange;
+  pointer-events: none;
+}
+
+
+.photo-box::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: -2px;
+  width: 2px;
+  height: 650px;
+  background: #bdbdbd;
 }
 
 .photo-box img {
@@ -39,23 +65,35 @@
   filter: grayscale(100%);
 }
 
+.line-right {
+content: "";
+  position: absolute;
+  top: 100%;
+  right: -4px;
+  width: 2px;
+  height: 650px;
+  background: #bdbdbd;
+
+}
+
+
 /* NAME */
 .name {
-  font-size: 26px;
-  font-weight: 700;
-  margin: 10px 0 5px;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 25px 10 5px;
 }
 
 .job {
-  font-size: 14px;
+  font-size: 17px;
   color: #666;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 /* CONTACTS */
 .contacts .contact {
   display: flex;
-  align-items: center;
+ align-items: center;
   margin-bottom: 8px;
 }
 
@@ -75,7 +113,7 @@
   color: #fff;
   padding: 8px 10px;
   flex: 1;
-  font-size: 13px;
+  font-size: px;
 }
 
 .address {
@@ -83,6 +121,7 @@
   margin: 12px 0;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
+  font-style: italic;
 }
 
 /* SKILLS */
@@ -111,7 +150,7 @@
 }
 
 
-/* SKILLS */
+/* skills */
 
 .skills-title {
   font-size: 18px;
