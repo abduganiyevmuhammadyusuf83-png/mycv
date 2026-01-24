@@ -19,91 +19,79 @@
 
  /* Chap tomon */ 
 
-.left {
+ .left {
   position: relative;
   width: 320px;
   background: #fff;
   padding: 20px;
- 
-}
+  box-sizing: border-box;
+  
+ }
 
-.photo-box {
+ .profile {
+
   position: relative;
-  padding: 8px;
-  margin-bottom: 20px;
-}
+ margin-bottom: 20px;
 
-
-.photo-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -3px;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  border-top: 4px solid orange;
-  border-left: 4px solid orange;
+   border-left: 4px solid orange;
   border-right: 4px solid orange;
-  pointer-events: none;
-}
+  border-top: 4px solid orange;
+  border-bottom: 0;
+ }
 
+ .profile img {
 
-.photo-box::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: -2px;
-  width: 2px;
-  height: 710px;
-  background: #bdbdbd;
-}
-
-.photo-box img {
   width: 100%;
   display: block;
-  filter: grayscale(100%);
-}
 
-.line-right {
-content: "";
+ }
+
+ .profile::after {
+
+  content: "";
   position: absolute;
-  top: 100%;
+
+  left: -4px;
   right: -4px;
-  width: 2px;
-  height: 710px;
-  background: #bdbdbd;
+  top: 100%;
 
-}
+  height: 800px;
+
+  border-left: 1.5px solid #bbbb;
+  border-right: 1.5px solid #bbbb;
+  border-bottom: 1.5px solid #bbbb;
+  box-sizing: border-box;
+
+ }
 
 
+ .profile h1 {
 
+  font-size: 24px;
+  margin: 10px 0 0;
+ }
 
-/* NAME */
-.name {
-  font-size: 30px;
-  font-weight: 800;
-  margin: 25px 10 5px;
-  padding-left: 10px;
-}
+ .job {
 
-.job {
   font-size: 17px;
   color: #666;
   margin-bottom: 20px;
-  padding-left: 10px;
-}
+  padding-left: 2px;
+ }
 
-/* CONTACTS */
-.contacts .contact {
+
+ .contacts .contact {
+
   display: flex;
- align-items: center;
- padding-left: 10px;
- padding-right: 10px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-bottom: 8px;
-}
+ }
 
-.icon {
+
+ .icon {
+
   width: 36px;
   height: 36px;
   background: #f5a623;
@@ -112,115 +100,84 @@ content: "";
   justify-content: center;
   margin-right: 8px;
   font-size: 14px;
-}
+ }
 
-.text {
+ .text {
+
   background: #2b2b2b;
   color: #fff;
   padding: 8px 10px;
   flex: 1;
-  font-size: px;
-}
+  font-size: 12px;
+ }
 
-.address {
+ .adress {
+
   font-size: 12px;
   margin: 12px 0;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
   padding: 8px;
   font-style: italic;
-}
+ }
 
-/* SKILLS */
+ /* Skills */
+ .skills-title {
 
-.skill {
-  margin-bottom: 10px;
-  padding: 4px;
-}
-
-.skill span {
-
-  font-size: 13px;
-  padding: 3px;
-}
-
-.bar {
-  height: 6px;
-  background: #333;
-  margin-top: 4px;
-}
-
-.fill {
-  height: 100%;
-  background: #f5a623;
-}
-
-
-/* skills */
-
-.skills-title {
   font-size: 18px;
   font-weight: 700;
   left: 5px;
   letter-spacing: 2px;
   margin-bottom: 15px;
   position: relative;
-  padding-left: 10px;
-  padding-top: 10px;
-}
+  padding: 10px;
+  padding-bottom: 5px;
+  padding-left: 7px;
+ }
 
-.skills-title::after {
+ .skills-title::after {
   content: "";
   width: 25px;
   height: 3px;
-  background: black;
+  background: #333;
   position: absolute;
   left: 10px;
-  bottom: -8px;
-}
+  bottom: -4px;
+ }
 
+ .skill span {
+  font-size: 13px;
+  padding: 3px;
+ }
 
-.skill {
+ .skills h3 {
+ 
+  margin: 20px 0 10px;
+
+ }
+
+ .skill {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 1px;
-  padding: 5px;
+   margin-bottom: 1px;
+   padding: 5px;
+ }
 
-}
 
+ .bar {
 
-.skill-name {
+  flex: 1;
+  height: 6px;
+  background: #333;
+  margin-top: px;
+ }
 
-  width: 90px;
-  font-size: 13px;
-}
+ .fill {
 
-.bar {
- flex: 1;
- height: 6px;
- background: #333;
-}
-
-.fill {
   height: 100%;
-  background: #f5a623;
-}
+  background: orange;
+ }
 
-/* line-bottom */
-.line-bottom {
-  width: calc(100% + 4px);
-  height: 2px;
-  background: #bdbdbd;
-  margin-left: -2px;
-  margin-top: 15px;
-}
-
-
-
-
-
- 
  /* O'ng Tomon */
 
  .right {
